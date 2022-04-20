@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
+import BackHome from "../../components/buttonBackHome";
 import useGetListTodos from "../../hooks/todos/useGetListTodos";
 import todosService from "../../services/todosService";
 import TodoItem from "./components/TodoItem";
@@ -38,6 +39,7 @@ const ShowData = () => {
 
   return (
     <div className="background">
+      <BackHome />
       <div className="show-data">
         <div className="search-field">
           <input

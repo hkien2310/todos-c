@@ -1,13 +1,11 @@
 import { useParams } from "react-router";
 import useGetDetailTodo from "../../hooks/todos/useGetDetailTodo";
-import useGetListTodos from "../../hooks/todos/useGetListTodos";
 
 const ShowDetail = () => {
   const param = useParams();
   //! State
   const id = param.id;
   const { data: todoDetail, loading: loadingDetail } = useGetDetailTodo(id);
-  const {data: todos, loading: loadingTodos} = useGetListTodos();
   
   //! Render
   return (

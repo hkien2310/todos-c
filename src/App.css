@@ -122,3 +122,8 @@
   right: 0;
   cursor: pointer;
 }
+.btn-back-home {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
